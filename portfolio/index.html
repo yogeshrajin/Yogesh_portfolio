@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogesh Raj H Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#internship h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 1rem auto 0;
+  background: linear-gradient(to right, #00ffe7, #007cf0);
+  border-radius: 2px;
+  box-shadow: 0 0 10px #00ffe7, 0 0 20px #007cf0;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #00e6f6;
+}
+.timeline-entry {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #00e6f6;
+  border-radius: 50%;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(90deg, #00fff0, #00c3ff, #007cf0);
+  background-size: 300% 300%;
+  animation: gradientFlow 6s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 10px rgba(0, 255, 255, 0.25);
+}
+
+
+
+#navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 0 0 10px 10px;
+}
+
+#navbar {
+  transition: top 0.4s ease-in-out;
+}
+
+#navbar.hide {
+  top: -100px; /* hides navbar above the screen */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #000000, #0f2027, #203a43, #2c5364);
+  color: var(--text-color);
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 64, 128, 0.6), rgba(0, 16, 32, 0.8)),
+    url('bagpt.jpg') no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+:root {
+  --primary-color: #000000;
+  --accent-color: #00e6f6;
+  --text-color: #e0ffff;
+  --section-bg: #1F2833;
+  --card-bg: #121212;
+}
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(
+    270deg,
+    #00ffe7,
+    #00c3ff,
+    #8a2be2,
+    #ff00ff,
+    #ffcc00,
+    #00ffe7
+  );
+  background-size: 1200% 1200%;
+  animation: gradientShift 6s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 25px rgba(255, 0, 255, 0.3);
+}
+
+
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+  body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  background: linear-gradient(135deg, #000000, #0f2027, #203a43, #2c5364);
+
+    color: var(--text-color);
+  }
+
+nav {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+  padding: 0.5rem 1.5rem; /* reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-links a {
+  font-size: 0.95rem; /* slightly smaller */
+  margin: 0 0.5rem;
+  padding-bottom: 3px;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(
+    90deg,
+    #ff00cc,
+    #3333ff,
+    #00fff0,
+    #00c3ff,
+    #ffcc00
+  );
+  background-size: 500% 500%;
+  animation: gradientFlow 4s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 12px rgba(0, 255, 255, 0.35);
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.nav-links a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.8rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif; /* futuristic look */
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(to right, #00ffe7, #007cf0);
+  transition: width 0.4s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #00ffe7, #00bfff);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #00ffe7;
+}
+
+.nav-links a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+ header {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 64, 128, 0.6), rgba(0, 16, 32, 0.8)), 
+    url('bagpt.jpg') no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+header h1,
+header p {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: var(--text-color);
+  }
+
+  section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #00ffe7, #007cf0);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #00ffe7, 0 0 20px #007cf0;
+}
+
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    background: var(--card-bg);
+    color: var(--accent-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--accent-color);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    max-height: 300px;
+    background-color: #000;
+  }
+
+  .project-card h3 {
+    padding: 1rem 1rem 0;
+  }
+
+  .project-card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.95rem;
+  }
+
+ .about img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;         
+  object-fit: cover;          
+  display: block;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); 
+}
+
+
+
+  .about p {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .contact input,
+  .contact textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .contact button {
+    padding: 1rem;
+    background: var(--accent-color);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .contact button:hover {
+    background: #00d5c2;
+  }
+
+  footer {
+    background: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .skill-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skill-content {
+    background: var(--card-bg);
+    color: var(--accent-color);
+    padding: 1.2rem 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+  }
+
+  .skill-row.from-left .skill-content {
+    transform: translateX(-100vw);
+  }
+
+  .skill-row.from-right .skill-content {
+    transform: translateX(100vw);
+  }
+
+  .skill-row.show.from-left .skill-content {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .skill-row.show.from-right .skill-content {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .skill-row:not(.show).from-left .skill-content {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  .skill-row:not(.show).from-right .skill-content {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<nav id="navbar">
+
+  <div class="logo"><strong>Yogesh Raj H</strong></div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#internship">Internship</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+    <a href="YOGESH RAJ H-resume.pdf" download>Resume</a>
+  </div>
+</nav>
+
+
+
+  <header id="home" data-aos="fade-up">
+    <h1>Yogesh Raj H</h1>
+    <p>Cybersecurity Enthusiast | Web Developer | Problem Solver</p>
+  </header>
+
+ <section id="about" class="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <img src="photo.jpg" alt="Profile Picture" data-aos="zoom-in" style="transition: transform 0.5s;" />
+  <p data-aos="fade-up" data-aos-delay="200" style="font-size: 1.1rem; line-height: 1.8;">
+    Hi, I'm <strong>Yogesh Raj H</strong> — a <span style="color: var(--accent-color); font-weight: 600;">Computer Science Engineering student</span> with a heart set on <strong>Cybersecurity</strong> and <strong>Web Development</strong>.
+  </p>
+  <p data-aos="fade-up" data-aos-delay="300" style="font-size: 1.1rem; line-height: 1.8;">
+    I specialize in ethical hacking, cryptography, and network security, and thrive on challenges that require a hacker’s mindset and a developer’s discipline.
+  </p>
+  <p data-aos="fade-up" data-aos-delay="400" style="font-size: 1.1rem; line-height: 1.8;">
+    When I’m not securing digital worlds, I love building <span style="color: var(--accent-color); font-weight: 500;">user-friendly websites</span> that blend design with functionality. Tools like React, Angular, and SQL are my daily companions.
+  </p>
+  <p data-aos="fade-up" data-aos-delay="500" style="font-size: 1.1rem; line-height: 1.8;">
+    Always curious and endlessly motivated, I'm on a mission to bridge security and innovation with every project I take on.
+  </p>
+</section>
+
+
+  <section id="projects" data-aos="fade-right">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card" data-aos="zoom-in">
+        <img src="chatboti.jpg" alt="Chatbot">
+        <h3>College Counselling Chatbot</h3>
+        <p>Designed and implemented a Python-based chatbot to assist students with college counselling 
+queries, integrating Natural Language Processing NLP to enhance interaction and user experience, 
+thereby improving accessibility and efficiency in providing instant guidance to students.  </p>
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <img src="aicctv.jpg" alt="CCTV AI">
+        <h3>AI-Based CCTV Threat Detection</h3>
+        <p>Developed a real-time CCTV surveillance system that uses YOLOv8 for detecting potential threats 
+such as weapons, intrusions, or suspicious behaviours. Integrated with StrongSORT for efficient object 
+tracking and incident pattern analysis. The system processes live video feeds, detects threats with high 
+accuracy, and instantly sends alerts to concerned authorities, enhancing security response and 
+situational awareness. </p>
+      </div>
+    </div>
+  </section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-wrapper">
+    <div class="skill-row from-left">
+      <div class="skill-content">
+        <h3>Programming Languages</h3>
+        <p>Java, Python, MySQL</p>
+      </div>
+    </div>
+    <div class="skill-row from-right">
+      <div class="skill-content">
+        <h3>Cybersecurity Tools</h3>
+        <p>Burp Suite, Nmap, Nessus</p>
+      </div>
+    </div>
+    <div class="skill-row from-left">
+      <div class="skill-content">
+        <h3>Web Technologies</h3>
+        <p>HTML, CSS, JavaScript, React, Angular</p>
+      </div>
+    </div>
+    <div class="skill-row from-right">
+      <div class="skill-content">
+        <h3>Database</h3>
+        <p>SQL - creation, manipulation, and integration</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="internship" data-aos="fade-up">
+  <h2>Internships</h2>
+  <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 900px; margin: 0 auto;">
+    
+    <!-- Internship 1 -->
+    <div style="background: var(--card-bg); color: var(--accent-color); padding: 2rem; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);" data-aos="fade-right">
+      <h3 style="margin-bottom: 0.5rem;"> Edify Techno Solutions</h3>
+      <p style="font-weight: bold; margin-bottom: 0.5rem;"> June 2024 – July 2024 | Web Development Intern</p>
+      <p style="line-height: 1.8;">
+        I contributed to building responsive and interactive websites and applications using:
+        <strong>HTML, CSS, JavaScript, React, and Angular</strong>. I also explored backend operations and practiced
+        <strong>SQL database management</strong> through hands-on tasks.
+      </p>
+      <ul style="line-height: 1.8; margin-top: 1rem;">
+        <li> Developed multi-page responsive layouts using HTML/CSS/JS</li>
+        <li> Integrated front-end with mock backend using React & Angular</li>
+        <li> Learned SQL CRUD operations and database connectivity basics</li>
+      </ul>
+    </div>
+
+    <!-- Internship 2 -->
+    <div style="background: var(--card-bg); color: var(--accent-color); padding: 2rem; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);" data-aos="fade-left">
+      <h3 style="margin-bottom: 0.5rem;"> Web Development Internship</h3>
+      <p style="font-weight: bold; margin-bottom: 0.5rem;"> June 20, 2025 – July 20, 2025 | Web Developer Intern</p>
+      <p style="line-height: 1.8;">
+        Currently working on building a full-stack web application using:
+        <strong>HTML, CSS, JavaScript, React, Node.js</strong> and a backend <strong>database</strong>. The focus is on clean UI/UX, responsiveness, and dynamic functionality.
+      </p>
+      <ul style="line-height: 1.8; margin-top: 1rem;">
+        <li> Designing interactive UIs with HTML, CSS, and JavaScript</li>
+        <li> Creating reusable components using React.js</li>
+        <li> Implementing APIs and backend logic with Node.js</li>
+        <li> Handling dynamic content and user data with a database</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+ <section id="achievements" data-aos="fade-right">
+  <h2>Achievements</h2>
+  <div class="skill-wrapper">
+    
+    <div class="skill-row from-left">
+      <div class="skill-content">
+        <h3>Python for Data Science</h3>
+        <p>NPTEL certificate with 70% (ELITE)</p>
+      </div>
+    </div>
+    
+    <div class="skill-row from-right">
+      <div class="skill-content">
+        <h3>Ethical Hacking Essentials</h3>
+        <p>Completed EC-Council's EHE v1 certification</p>
+      </div>
+    </div>
+
+    <div class="skill-row from-left">
+      <div class="skill-content">
+        <h3>Event Leadership</h3>
+        <p>Successfully hosted a department symposium event</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="hobbies" data-aos="fade-up">
+  <h2>Hobbies</h2>
+  <div class="skill-wrapper">
+    <div class="skill-row from-left">
+      <div class="skill-content">
+        <h3>Gaming</h3>
+        <p>I enjoy competitive and strategy-based games which keep my problem-solving sharp and reflexes quick.</p>
+      </div>
+    </div>
+
+    <div class="skill-row from-right">
+      <div class="skill-content">
+        <h3>Music</h3>
+        <p>I love listening to electronic and lo-fi beats — it helps me relax and focus while coding.</p>
+      </div>
+    </div>
+
+    <div class="skill-row from-left">
+      <div class="skill-content">
+        <h3>Tech Exploration</h3>
+        <p>Exploring the latest in cybersecurity, AI tools, and developer trends is something I truly enjoy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sports" data-aos="fade-up">
+  <h2>Sports Activities</h2>
+  <div class="skill-wrapper">
+    
+    <div class="skill-row from-left">
+      <div class="skill-content">
+        <h3>Badminton</h3>
+        <p>Won college-level badminton tournament. The sport has sharpened my agility, coordination, and focus under pressure.</p>
+      </div>
+    </div>
+
+    <div class="skill-row from-right">
+      <div class="skill-content">
+        <h3>Football</h3>
+        <p>Led my team to victory in an inter-club football competition. As captain, I developed leadership, teamwork, and game-time decision-making skills.</p>
+      </div>
+    </div>
+
+    <div class="skill-row from-left">
+      <div class="skill-content">
+        <h3>8 Ball Pool</h3>
+        <p>Enjoy competing in 8 Ball Pool tournaments — it enhances my strategic thinking, patience, and precision.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+ <section id="contact" class="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <div style="margin-top: 2rem; text-align: center; display: flex; flex-direction: column; gap: 1rem; font-size: 1.1rem;">
+    
+    <p>
+      <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+      <a href="mailto:aadithyaayogesh@gmail.com" class="contact-link">aadithyaayogesh@gmail.com</a>
+    </p>
+
+    <p>
+      <i class="fas fa-phone" style="margin-right: 8px;"></i>
+      <a href="tel:+919445249041" class="contact-link">+91 94452 49041</a>
+    </p>
+
+    <p>
+      <i class="fab fa-linkedin" style="margin-right: 8px;"></i>
+      <a href="https://www.linkedin.com/in/yogesh-raj-h-40b4a1255/" target="_blank" class="contact-link">LinkedIn</a>
+    </p>
+
+    <p>
+      <i class="fab fa-github" style="margin-right: 8px;"></i>
+      <a href="https://github.com/yogeshraj-h" target="_blank" class="contact-link">GitHub</a>
+    </p>
+
+    <p>
+      <i class="fab fa-instagram" style="margin-right: 8px;"></i>
+      <a href="https://www.instagram.com/your_username" target="_blank" class="contact-link">Instagram</a>
+    </p>
+
+  </div>
+</section>
+
+<style>
+  .contact-link {
+    color: #00ffe7;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .contact-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(to right, #00ffe7, #007cf0);
+    transition: width 0.4s ease;
+  }
+
+  .contact-link:hover {
+    color: #00e6f6;
+  }
+
+  .contact-link:hover::after {
+    width: 100%;
+  }
+</style>
+
+
+  <footer data-aos="fade-in">
+    &copy; 2025 Yogesh Raj H. All rights reserved.
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const row = entry.target;
+      if (entry.isIntersecting) {
+        row.classList.add('show');
+      } else {
+        row.classList.remove('show');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.skill-row').forEach(row => {
+    observer.observe(row);
+  });  </script>
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', function () {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (currentScroll > lastScrollTop) {
+      // Scrolling down
+      navbar.classList.add('hide');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('hide');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // avoid negative scroll
+  });
+</script>
+
+</body>
+</html>
